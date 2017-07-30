@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, {
   Component
 } from 'react'
@@ -83,10 +84,10 @@ const AccountKit = new RNAccountKit()
 
 export class LoginButton extends Component {
   static propTypes = {
-    type: React.PropTypes.string,
-    onLogin: React.PropTypes.func.isRequired,
-    onError: React.PropTypes.func.isRequired,
-    onCancel: React.PropTypes.func
+    type: PropTypes.string,
+    onLogin: PropTypes.func.isRequired,
+    onError: PropTypes.func.isRequired,
+    onCancel: PropTypes.func
   };
 
   static defaultProps = {
